@@ -1,0 +1,31 @@
+.well {
+	padding: 10px;
+	background-color: $menu-background-color;
+	border: solid darken($menu-background-color, 10%) 1px;
+	margin-bottom: 10px;
+
+	@include media(max-width 500px) {
+		border: solid white 3px;
+	}
+	
+	* {
+		color: $menu-color;
+	}
+
+	p {
+		line-height: 1.3em;
+
+		@include media(max-width 500px) {
+			font-size: .9em;
+		}
+	}
+
+	@include media(max-width $tablet-portrait) {
+		text-align: center;
+	}
+
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}

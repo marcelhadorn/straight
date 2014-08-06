@@ -1,0 +1,21 @@
+.video {
+  @include span-columns(12);
+  margin: auto;
+}
+
+.video-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding-bottom: 56.25%; // For ratio 16:9. 75% if ratio is 4:3
+  margin-bottom: 20px;
+  height: 0;
+}
+
+iframe {
+  //position: absolute;
+  //top: 0;
+  //left: 0;
+  width: 100%;
+  height: 100%;
+}

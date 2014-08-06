@@ -1,0 +1,16 @@
+// FORMS
+// remove all shadows for all text inputs
+textarea:focus, #{$all-text-inputs-focus} {
+	border-color: $main-color;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	color: rgb(50,50,50);
+}
+
+.button {
+	@include button;
+
+	&:focus, &:active {
+		border: none !important;
+	}
+}

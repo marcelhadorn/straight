@@ -1,0 +1,19 @@
+// COLORS
+$main-color: rgb(5, 176, 239);
+$base-color: $main-color;
+$linkcolor: $main-color;
+$menu-background-color: rgb(250,250,250);
+$menu-color: rgb(50,50,50);
+$container-background: rgb(250,250,250);
+
+// FONTS
+$header-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// RESPONSIVE HELPERS
+$tablet-portrait: 1000px;
+$phone-portrait: 500px;
+$visual-grid: false !default; // Display the base grid
+$visual-grid-color: red;
+$visual-grid-index: front;
+
+$max-width: 1280px !default;

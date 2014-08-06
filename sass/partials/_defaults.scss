@@ -1,0 +1,67 @@
+// DEFAULTS
+// alerts
+.alert {
+  @extend %flash-base;
+  @include flash($main-color);
+}
+
+.error {
+  @extend %flash-base;
+  @include flash($error-color);
+}
+
+.notice {
+  @extend %flash-base;
+  @include flash($notice-color);
+}
+
+.success {
+  @extend %flash-base;
+  @include flash($success-color);
+}
+
+@mixin btn($bg: rgb(0,120,200), $col: lighten($bg,70%), $rad: 4px, $brdw: 1px, $brdt: solid, $brdc: rgba(0,0,0,.1)) {
+    padding: 5px 12px 5px;
+    background: $bg;
+    color: $col;
+    border-radius: $rad;
+    text-decoration: none;
+    border: $brdw $brdt $brdc;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    font-family: $header-font-family;
+    font-weight: 500;
+    display: inline-block;
+    margin: 0px 5px 10px 0px;
+    transition: .1s ease-in-out all;
+
+    &:hover {
+        background: lighten($bg, 5%);
+    }
+
+    &:active {
+        background: darken($bg, 2%);
+        box-shadow: inset 0px 0px 6px 0px rgba(0,0,0,.5);
+        //-webkit-transform: scale(.98);
+    }
+}
+
+// remove webkit outline
+* {
+	outline: none !important;
+}
+
+// reset html & body
+html, body {
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+// THE APP CONTAINER
+// set defaults for app container
+.container {
+  height: 100%;
+  @include outer-container;
+}

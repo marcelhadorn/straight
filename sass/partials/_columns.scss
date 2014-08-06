@@ -1,0 +1,49 @@
+// COLUMNS
+// Column container
+#page, footer {
+	@include outer-container;
+	background: $container-background;
+	@include pad(30px);
+}
+
+// half width column = 6 of 12
+.half {
+	margin-top: 20px;
+	@include span-columns(6);
+
+	@include media(max-width $tablet-portrait) {
+		@include span-columns(12);
+	}
+
+	@include media(max-width 500px) {
+		margin-top: 15px;
+	}
+}
+
+// wide column = 8 of 12
+.wide, .content-area {
+	margin-top: 20px;
+	@include span-columns(8);
+
+	@include media(max-width $tablet-portrait) {
+		@include span-columns(12);
+	}
+
+	@include media(max-width 500px) {
+		margin-top: 15px;
+	}
+}
+
+//narrow column = 4 of 12
+.narrow, .widget-area {
+	margin-top: 20px;
+	@include span-columns(4);
+
+	@include media(max-width $tablet-portrait) {
+		@include span-columns(12);
+	}
+
+	@include media(max-width 500px) {
+		margin-top: 15px;
+	}
+}
