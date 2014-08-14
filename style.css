@@ -992,8 +992,8 @@ header.site-header {
     padding-left: 0; }
     @media screen and (min-width: 53.75em) {
       header.site-header ul.children {
-        left: 9.75em;
         position: absolute;
+        left: 9.75em;
         top: 60px; } }
     @media screen and (min-width: 53.75em) {
       header.site-header ul.children ul.children {

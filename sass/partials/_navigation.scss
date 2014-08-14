@@ -235,8 +235,8 @@ header.site-header {
     padding-left: 0;
 
     @include media($horizontal-bar-mode) {
-      left: $navigation-submenu-padding + 8.75em;
       position: absolute;
+      left: $navigation-submenu-padding + 8.75em;
       top: $navigation-height;
     }
 
