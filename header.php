@@ -30,7 +30,7 @@
 	</a>
 
 	<nav id="site-navigation" class="main-navigation hidden" role="navigation">
-		<a class="menu-toggle navigation-menu-button" id="js-mobile-menu"><?php _e( 'menu', 'straight' ); ?></a>
+		<a class="menu-toggle navigation-menu-button" id="js-mobile-menu"><span class="label"><?php _e( 'menu', 'straight' ); ?></span> <span class="bars"><span class="bar"></span> <span class="bar"></span> <span class="bar"></span></span> </a>
 		<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		<!-- <div class="navigation-tools">
 	    <div class="search-bar">

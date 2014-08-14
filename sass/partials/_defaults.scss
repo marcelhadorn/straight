@@ -47,6 +47,30 @@
     }
 }
 
+@mixin menu-toggle-btn($barheight: 3px, $barwidth: 30px, $barcolor: white) {
+  padding: 19px 20px 0;
+  line-height: $barheight * 7.5;
+  font-size: 1.2em;
+  cursor: pointer;
+
+  span.label {
+    float: left;
+    margin-right: 12px;
+  }
+
+  span.bars {
+    float: right;
+  }
+
+  span.bar {
+    margin-bottom: $barheight *2;
+    display: block;
+    height: $barheight;
+    width: $barwidth;
+    background-color: $barcolor;
+  }
+}
+
 // remove webkit outline
 * {
 	outline: none !important;
