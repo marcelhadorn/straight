@@ -1,6 +1,6 @@
 // COLUMNS
 // Column container
-#page, footer {
+#page, footer.site-footer {
 	@include outer-container;
 	background: $container-background;
 	@include pad(30px);

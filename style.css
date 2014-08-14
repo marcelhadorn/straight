@@ -698,13 +698,13 @@ pre {
   p {
     font-size: 0.95em; } }
 
-#page, footer {
+#page, footer.site-footer {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   background: #fafafa;
   padding: 30px; }
-  #page:after, footer:after {
+  #page:after, footer.site-footer:after {
     content: "";
     display: table;
     clear: both; }
