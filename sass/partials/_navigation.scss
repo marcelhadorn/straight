@@ -204,22 +204,6 @@ header.site-header {
       padding-right: 0em;
     }
 
-    > a {
-      padding-right: 1.6em;
-      position: relative;
-
-      @include media($large-screen) {
-        margin-right: $navigation-submenu-padding;
-      }
-
-      &:after {
-        content: '›';
-        font-size: 1.2em;
-        position: absolute;
-        right: $navigation-submenu-padding / 2;
-      }      
-    }
-
     &:hover > ul.children {
       display: block;
     }
@@ -238,6 +222,15 @@ header.site-header {
       position: absolute;
       left: $navigation-submenu-padding + 8.75em;
       top: $navigation-height;
+
+      li.page_item_has_children > a {
+        &:after {
+          content: '›';
+          font-size: 1.2em;
+          position: absolute;
+          right: $navigation-submenu-padding / 2;
+        }
+      }
     }
 
     ul.children {
@@ -273,6 +266,7 @@ header.site-header {
         text-align: right;
         width: 100%;
         padding-right: 0.8em;
+        border-bottom: 1px solid black;
 
         @include media($horizontal-bar-mode) {
           background-color: $navigation-background;

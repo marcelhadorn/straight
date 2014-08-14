@@ -53,8 +53,14 @@ $(document).ready(function() {
 
   $('.page_item_has_children').mouseenter(function(){
     var position = $(this).position();
-    console.log(position);
     $(this).children('ul.children').css('left', position.left);
+  });
+
+  $('.page_item_has_children .page_item_has_children').mouseenter(function(){
+    var position = $(this).position(),
+        width =  $(this).width();
+    console.log(position);
+    $(this).children('ul.children').css('left', position.left + width);
   });
 
   // underline under the active nav item
