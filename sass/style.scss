@@ -8,12 +8,12 @@
 @import "partials/variables";
 
 // Bourbon Framework
-@import "bourbon";
+@import "bourbon/bourbon";
 
 // Variables and Settings that depend on Bourbon
 @import "partials/calculations";
 @import "base/grid-settings";
-@import "neat";
+@import "neat/neat";
 @import "base/base";
 
 // Base-Styles

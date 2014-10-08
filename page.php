@@ -30,6 +30,18 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
+	<div id="secondary">
+		<h2>
+		<?php
+			the_block( 'second', array(
+			    'label'         => __( 'Admin label', 'econd Title' ),
+			    'type'          => 'one-liner',
+			    'apply_filters' => true
+			)); 
+		?>
+		</h2>
+		<?php the_block( 'third' ) ?>
+	</div>
+<?php // get_sidebar(); ?>
 <?php get_footer(); ?>
+s
