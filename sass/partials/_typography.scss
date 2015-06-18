@@ -1,5 +1,5 @@
 // TYPOGRAPHY
-h1, h2, h3, h4, h5, h6 { 
+h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 4px;
 	margin-top: 14px;
 	line-height: 1.4em;
@@ -23,7 +23,7 @@ h3 {
 	padding-bottom: 2px;
 
 	&:hover {
-		border-bottom-color: $linkcolor;	
+		border-bottom-color: $linkcolor;
 	}
 }
 
@@ -37,10 +37,6 @@ p {
 	}
 }
 
-
-$serif: 'Lusitana', serif;
-$serif-2: 'Merriweather', serif;
-$sans-serif: 'Merriweather Sans', sans-serif;
 
 // .type {
 //   border-bottom: 1px solid;

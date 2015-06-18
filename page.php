@@ -27,21 +27,19 @@ get_header(); ?>
 				?>
 
 			<?php endwhile; // end of the loop. ?>
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 	<div id="secondary">
-		<h2>
 		<?php
-			the_block( 'second', array(
-			    'label'         => __( 'Admin label', 'econd Title' ),
-			    'type'          => 'one-liner',
-			    'apply_filters' => true
-			)); 
-		?>
-		</h2>
-		<?php the_block( 'third' ) ?>
+
+		$image = get_field('service');
+
+		if( !empty($image) ): ?>
+
+			<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="100" />
+
+		<?php endif; ?>
+		<?php the_field('description'); ?>
 	</div>
 <?php // get_sidebar(); ?>
 <?php get_footer(); ?>
-s
