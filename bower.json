@@ -1,0 +1,26 @@
+{
+  "name": "straight",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Marc3llo/straight",
+  "authors": [
+    "Marcello <marcel@duotones.ch>"
+  ],
+  "description": "base theme",
+  "main": "index.php",
+  "keywords": [
+    "wp",
+    "theme"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "threeinarow": "git@bitbucket.org:duotones/threeinarow.git"
+  }
+}

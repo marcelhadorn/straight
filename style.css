@@ -1,7 +1,7 @@
 /*
  * Developer : Marcel Hadorn for Duotones LLC (marcel@duotones.ch)
  * All HTML/CSS code (c)2014 Duotones LLC. all rights reserved
- * Data and Content (c)2013 ClouTag.
+
 */
 /*! normalize.css v1.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
@@ -839,7 +839,7 @@ header.site-header {
     color: rgba(255, 255, 255, 0.7);
     display: block;
     float: right;
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     font-weight: 700;
     line-height: 60px;
     margin: 0;
